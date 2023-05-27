@@ -1,0 +1,21 @@
+httpd:
+  server_name: my_apache_server
+  port: 80
+  document_root: /var/www/html
+
+application:
+  name: hello_world
+  index_file: index.html
+
+files:
+  - path: /var/www/html/index.html
+    content: |
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Hello, World!</title>
+        </head>
+        <body>
+          <h1>Hello, World!</h1>
+        </body>
+      </html>
